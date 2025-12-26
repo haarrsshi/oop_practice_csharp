@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\01harshita\\Code\\Modul320\\VS Code\\OOP_PracticePractical\\01 Practice1\\01 Practice1.csproj",
+      "projectUniqueName": "C:\\01harshita\\Code\\Modul320\\VS Code\\OOP_PracticePractical\\01TicketSorter\\01 Practice1.csproj",
       "projectName": "01 Practice1",
-      "projectPath": "C:\\01harshita\\Code\\Modul320\\VS Code\\OOP_PracticePractical\\01 Practice1\\01 Practice1.csproj",
+      "projectPath": "C:\\01harshita\\Code\\Modul320\\VS Code\\OOP_PracticePractical\\01TicketSorter\\01 Practice1.csproj",
       "packagesPath": "C:\\Users\\Conta\\.nuget\\packages\\",
-      "outputPath": "C:\\01harshita\\Code\\Modul320\\VS Code\\OOP_PracticePractical\\01 Practice1\\obj\\",
+      "outputPath": "C:\\01harshita\\Code\\Modul320\\VS Code\\OOP_PracticePractical\\01TicketSorter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Conta\\AppData\\Roaming\\NuGet\\NuGet.Config"
