@@ -5,9 +5,14 @@ public class Warrior : Character
     {
         Strength = strength;
     }
+
+    public override int GetDamage()
+    {
+        return Strength;
+    }
     public override void Attack()
     {
-        Console.WriteLine($"{Name} attacks with {Strength} damage.");
+        Console.WriteLine($"{Name} attacks with {GetDamage()} damage.");
     }
 
 }

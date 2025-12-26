@@ -7,8 +7,12 @@ public class Mage : Character
     {
         Mana = mana;
     }
+    public override int GetDamage()
+    {
+        return Mana;
+    }
     public override void Attack()
     {
-        Console.WriteLine($"{Name} casts a spell with {Mana} damage.");
+        Console.WriteLine($"{Name} casts a spell with {GetDamage()} damage.");
     }
 }

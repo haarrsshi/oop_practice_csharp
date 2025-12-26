@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("03 Game Characters System")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73ec6de61e7de0f7befdcc9a574e54170e7d5552")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c9433d07789b9227ab72729aaee46b2c4ae3792")]
 [assembly: System.Reflection.AssemblyProductAttribute("03 Game Characters System")]
 [assembly: System.Reflection.AssemblyTitleAttribute("03 Game Characters System")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

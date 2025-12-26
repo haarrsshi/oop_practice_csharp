@@ -1,8 +1,8 @@
-public abstract class Character
+public class Enemy
 {
     protected string Name {get;set;}
-    protected int Health {get;set;}
-    public Character (string name, int health)
+    public int Health {get;set;}
+    public Enemy(string name, int health)
     {
         Name = name;
         Health = health;
@@ -22,6 +22,4 @@ public abstract class Character
             return false;
         }
     }
-    public abstract int GetDamage();
-    public abstract void Attack();
 }
