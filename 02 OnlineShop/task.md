@@ -1,62 +1,54 @@
-## Scenario
+## 📌 Scenario
 
-A company rents out different **vehicles**.
+An online shop supports **different payment methods**.
 
 ---
 
-## REQUIREMENTS
+## Requirements
 
 ### Base class (abstract)
 
 Create an abstract class:
 
 ```
-Vehicle
+Payment
 ```
 
 It has:
 
-* `Brand` (string)
-* `IsRented` (bool)
+* `Amount` (decimal)
+* constructor to set amount
 
-Constructor:
+It defines:
 
-* sets brand
-* sets `IsRented = false`
-
-Methods:
-
-* `Rent()` → marks vehicle as rented
-* `Return()` → marks vehicle as available
-* abstract method `CalculateRentalPrice(int days)`
+* abstract method `ProcessPayment()`
+* virtual method `ShowDetails()`
 
 ---
 
-### Vehicle types (inheritance)
+### Payment types (Inheritance + Polymorphism)
 
-#### Car
+#### CreditCardPayment
 
-* extra property: `DailyRate`
-* rental price = `DailyRate * days`
+* extra property: `CardNumber`
+* overrides `ProcessPayment()`
+* overrides `ShowDetails()` (also prints card info)
 
-#### Bike
+#### BankTransferPayment
 
-* extra property: `HourlyRate`
-* rental price = `HourlyRate * days * 24`
-
-(each class implements `CalculateRentalPrice` differently)
+* extra property: `Iban`
+* overrides `ProcessPayment()`
+* overrides `ShowDetails()` (also prints IBAN)
 
 ---
 
-### Polymorphism (MANDATORY)
+### 3Program behavior (MANDATORY)
 
 In `Main`:
 
-* Create a `List<Vehicle>`
-* Add **at least one Car and one Bike**
-* Loop over the list:
+* Create a `List<Payment>`
+* Add **at least 2 different payment objects**
+* Loop over the list and:
 
-  * rent each vehicle
-  * calculate rental price for X days
-  * print the price
-  * return the vehicle
+  * call `ShowDetails()`
+  * call `ProcessPayment()`
